@@ -56,7 +56,7 @@ class Logviewer(commands.Cog, name=__plugin_name__):
     @checks.has_permissions(PermissionLevel.OWNER)
     async def logviewer(self, ctx: commands.Context):
         """
-        Log viewer manager.
+        Log viewer plugin manager.
         """
         await ctx.send_help(ctx.command)
 
