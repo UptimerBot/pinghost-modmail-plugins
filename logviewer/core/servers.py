@@ -50,7 +50,8 @@ class Config:
     def __init__(self):
         self.log_prefix = os.getenv("URL_PREFIX", "/logs")
         self.host = os.getenv("HOST", "0.0.0.0")
-        self.port = int(os.getenv("PORT", 8000))
+        self.port = int(os.getenv("SERVER_PORT") or os.getenv("PORT") or 8000)
+
 
 
 class LogviewerServer:
